@@ -1,0 +1,298 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #E65F78
+}
+
+.navbar{
+    z-index: 9999;
+}
+
+.nav-link{
+    
+}
+
+.about:hover{
+    color: var(--main-color);
+}
+.services:hover{
+    color: var(--main-color);
+}
+.client:hover{
+    color: var(--main-color);
+}
+.portfolio:hover{
+    color: var(--main-color);
+}
+.blog:hover{
+    color: var(--main-color);
+}
+.contact:hover{
+    color: var(--main-color);
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imges/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 60px;
+}
+header h1::after{
+content: '|';
+animation: header-animation 2s infinite linear;
+}
+@keyframes header-animation{
+    0%{content: '|';}
+    3%{content: 'D|';}
+    5%{content: 'De|';}
+    7%{content: 'Dev|';}
+    10%{content: 'Deve|';}
+    13%{content: 'Devel|';}
+    15%{content: 'Develo|';}
+    17%{content: 'Develop|';}
+    20%{content: 'Developm|';}
+    24%{content: 'Developme|';}
+    25%{content: 'Developmen|';}
+    27%{content: 'Development|';}
+    30%{content: 'Development|';}
+    32%{content: 'Developmen|';}
+    35%{content: 'Developme|';}
+    37%{content: 'Develop|';}
+    40%{content: 'Develo|';}
+    43%{content: 'Devel|';}
+    45%{content: 'Deve|';}
+    48%{content: 'Dev|';}
+    51%{content: 'De|';}
+    53%{content: 'Des|';}
+    55%{content: 'Desi|';}
+    58%{content: 'Desig|';}
+    60%{content: 'Design|';}
+    63%{content: 'Designe|';}
+    65%{content: 'Designer|';}
+    68%{content: 'Designer|';}
+    70%{content: 'Designe|';}
+    72%{content: 'Design|';}
+    74%{content: 'Desig|';}
+    76%{content: 'Desi|';}
+    78%{content: 'Des|';}
+    80%{content: 'De|';}
+    83%{content: 'Dev|';}
+    85%{content: 'Deve|';}
+    88%{content: 'Devel|';}
+    90%{content: 'Develo|';}
+    93%{content: 'Develop|';}
+    96%{content: 'Develope|';}
+    100%{content: 'Developer|';}
+}
+.btn-download {
+    color: white;
+    /* border-radius: 50rem !important; */
+}
+
+.btn-download:hover {
+    background-color: white;
+    color: black;
+}
+
+.setting {
+    left: 0;
+    top: 30%;
+    width: 40px;
+    height: 40px;
+    background-color: #333333;
+    border-radius: 0 5px 5px 0;
+    z-index: 1;
+}
+
+.shape {
+    width: 40px;
+    height: 70px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    border: 2px solid white;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation: move 1s infinite linear;
+}
+@keyframes move{
+    0%{
+        bottom: 30px;
+    }
+    25%{
+        bottom: 80px;
+    }
+    50%{
+        bottom: 30px;
+    }
+    75%{
+        bottom: 80px;
+    }
+    100%{
+        bottom: 30px;
+    }
+}
+.shape::after {
+    content: '';
+    width: 4px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+.inner img{
+width: 100%;
+}
+.inner-2 h1::after{
+    content: ' Me';
+    font-size: 30px;
+    font-weight: normal;
+}
+.inner-2 h2::after{
+    content: ' IM Kerri Deo.';
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 25px;
+}
+.inner-2 p{
+    font-size: 17px;
+}
+.inner-img{
+    border: 1px solid black;
+    padding: 2px;
+}
+#about ul li{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: 2px solid darkgray;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.1s;
+}
+#about ul li:hover{
+    border:2px solid var(--main-color);
+    color: var(--main-color);
+}
+#client{
+    background-color: #F1F1F1;
+}
+.fa-quote-left{
+    color: var(--main-color);
+}
+.slider img{
+    width: 70px;
+}
+.carousel-indicators{
+bottom: -30px;
+}
+.test{
+    font-style: italic;
+}
+.carousel-indicators [data-bs-target]{
+    width: 35px;
+    height: 8px;
+    border-radius: 12px;
+    background-color: var(--main-color);
+}
+.nav-tabs{
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin: 0 12px;
+}
+.nav-tabs .nav-link.active{
+    color: white;
+    background-color: var(--main-color);
+    border-color: transparent;
+    border-radius: 20px;
+}
+.nav-tabs .nav-link :hover{
+    border-color: transparent;
+}
+.nav-tabs .nav-link {
+    color: black;
+}
+.items .layer{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+.items:hover .layer{
+top: 0;
+}
+.items::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+}
+.items:hover::after{
+    opacity: 0.5;
+    transition: 0.5s;
+    color: white;
+
+}
+.items img{
+    transition: 0.5s;
+}
+.items:hover img{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+#blog{
+    background-color: #F1F1F1;
+}
+.text-pink{
+    color: var(--main-color);
+}
+.caption p{
+    font-size: 15px;
+}
+.caption h3{
+    font-size: 20px;
+}
+.card{
+    border: none;
+}
+.icon i{
+    font-size: 45px;
+    color: var(--main-color);
+}
+.icon h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-control:focus{
+    color: var(--main-color);
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 .25rem var(--main-color);
+}
+.button-color:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.button-color{
+    background-color: var(--main-color);
+    color: white;
+    width: 180px;
+    height: 65px;
+    font-size: 20px;
+}
+html{
+    scroll-padding-top: 80px;
+}
